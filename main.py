@@ -38,7 +38,7 @@ def main():
                 exit()
             for shot in shots:
                 if shot.colliding(stroid):
-                    stroid.kill()
+                    stroid.split()
                     shot.kill()
         pygame.display.flip()
         dt = clock.tick(60) / 1000
